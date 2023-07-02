@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".checkout">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:text="Please Confirm your Delivery Details"
+        android:textSize="18dp"
+        android:fontFamily="@font/allerta"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:textColor="@color/reddish"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Payment Method:"
+        android:textStyle="bold"
+        android:fontFamily="@font/allerta"/>
+    <RadioGroup
+        android:id="@+id/radgrp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/meth1"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:text="COD"
+        android:fontFamily="@font/allerta"
+        android:checked="false"/>
+
+    <RadioButton
+        android:id="@+id/meth2"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:checked="false"
+        android:fontFamily="@font/allerta"
+        android:text="Add Credit Card" />
+    </RadioGroup>
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose your Desired Gate to be Delivered to:"
+        android:textStyle="bold"
+        android:fontFamily="@font/allerta"/>
+    <RadioGroup
+        android:id="@+id/radgrp2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/meth3"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="Gate 3"
+            android:fontFamily="@font/allerta"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/meth4"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:checked="false"
+            android:fontFamily="@font/allerta"
+            android:text="Gate 4" />
+    </RadioGroup>
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/tv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose your Delivery Time:"
+        android:textStyle="bold"
+        android:fontFamily="@font/allerta"/>
+    <RadioGroup
+        android:id="@+id/radgrp3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/meth5"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="12:00 PM"
+            android:fontFamily="@font/allerta"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/meth6"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:checked="false"
+            android:fontFamily="@font/allerta"
+            android:text="3:00 PM" />
+    </RadioGroup>
+
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confbutt"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        app:layout_constraintWidth_percent=".8" />
+
+</LinearLayout>
